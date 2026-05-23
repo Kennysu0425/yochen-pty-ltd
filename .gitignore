@@ -1,0 +1,17 @@
+# Claude Code internal state — never commit
+.claude/
+
+# macOS noise
+.DS_Store
+**/.DS_Store
+.localized
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Temp
+*.swp
+*.bak
+*~
