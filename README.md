@@ -17,10 +17,20 @@ roots, so this nested git repo does not conflict with AI OS.
 ## Current state
 
 - Australian Pty Ltd (ACN registered).
-- **No active business operations yet** — this is a shell / staging entity.
 - Owns `yochen.com.au` (registered at VentraIP, 2026-05-22).
 - Deliberately did not register `yochen.au` (.au priority allocation ended
   2024-09-20; first-come-first-served risk accepted).
+- Landing page lives at the repo root (Next.js 16 + Tailwind v4).
+
+## Products
+
+Yochen products live under `products/` as **nested git repos** — each
+has its own `.git` and remote, managed independently. The outer Yochen
+repo ignores `products/` entirely (see `.gitignore`).
+
+- `products/pdf-professional-suite/` — macOS PDF app. Remote:
+  `github.com/Kennysu0425/pdf-professional-suite`. Migrated under Yochen
+  on 2026-05-27; previously lived at `Desktop/B_技術開發/Git/`.
 
 ## Not the same as Joy TruePath
 

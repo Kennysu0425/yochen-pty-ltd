@@ -28,3 +28,7 @@ next-env.d.ts
 # Vercel
 .vercel
 
+# Nested product repos — each has its own .git + remote, managed independently.
+# Outer Yochen repo only tracks the landing page + admin notes.
+products/
+
