@@ -31,10 +31,14 @@ off by default. Confirm anyway.
 You need the two Cloudflare nameservers Cloudflare assigns to yochen.com.au
 BEFORE you change anything at VentraIP. So do Cloudflare setup first:
 
-1. Sign up new Cloudflare account (Yochen-dedicated — separate from Joy
-   Truepath's account). Email can be anything you control (e.g., your
-   personal gmail with a `+yochen` alias); the account email is just for
-   Cloudflare notifications, doesn't need to be `@yochen.com.au`.
+1. Log in to the existing Cloudflare account managed under
+   `kennysu.tw@gmail.com` — the same account that already hosts
+   `joytruepath.com`. Yochen shares this account by deliberate choice:
+   each Cloudflare zone is independent (separate NS, DNS records, Email
+   Routing), so co-tenancy does not cause cross-domain leakage. If we
+   ever need strict billing/access isolation we can move the zone to a
+   dedicated account later (Cloudflare supports zone transfer between
+   accounts).
 2. After login → Add a Site → enter `yochen.com.au` → choose **Free** plan.
 3. Cloudflare scans existing DNS and proposes a record set. It'll be mostly
    empty (yochen.com.au is a fresh registration). Accept the empty/default
